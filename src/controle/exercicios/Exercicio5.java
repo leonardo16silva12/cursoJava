@@ -2,10 +2,10 @@ package controle.exercicios;
 
 import java.util.Scanner;
 
+// 5. Refatorar o exercício 4, utilizando a estrutura switch.
 public class Exercicio5 {
 
 	public static void main(String[] args) {
-		/** 5. Refatorar o exercício 04, utilizando a estrutura switch. */
 
 		int contadorDeDivisores = 0;
 		Scanner scanner = new Scanner(System.in);
@@ -20,7 +20,6 @@ public class Exercicio5 {
 		}
 
 		switch (contadorDeDivisores) {
-
 		case 0:
 			System.out.println("O numero " + numero + " é um numero primo.");
 			break;
