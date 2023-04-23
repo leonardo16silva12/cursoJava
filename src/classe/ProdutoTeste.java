@@ -11,16 +11,16 @@ public class ProdutoTeste {
 		
 		Produto p1 = new Produto();
 		p1.nome = "Notebook";
-		p1.preco = 4356.89;
-		p1.desconto = 0.15;
+		p1.preco = 4000;
+		p1.desconto = 0.20;
 		
 		var p2 = new Produto();
 		p2.nome = "Celular";
-		p2.preco = 1299.99;
+		p2.preco = 1500;
 		p2.desconto = 0.10;		
 		
-		double precoFinal1 = p1.preco *(1 - p1.desconto);
-		double precoFinal2 = p2.preco *(1 - p2.desconto);
+		double precoFinal1 = p1.precoComDesconto(0.50);
+		double precoFinal2 = p2.precoComDesconto();
 		double totalCarrinho = precoFinal1 + precoFinal2;
 
 		System.out.println(p1.nome + " custa " + d.format(precoFinal1));
