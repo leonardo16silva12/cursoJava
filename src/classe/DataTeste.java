@@ -4,10 +4,7 @@ public class DataTeste {
 
 	public static void main(String[] args) {
 		
-		Data d1 = new Data();
-		d1.dia = 21;
-		d1.mes = 1;
-		d1.ano = 2003;
+		Data d1 = new Data(21, 1, 2003);
 		String data1 = d1.formatarData();
 		
 		var d2 = new Data();
@@ -16,8 +13,12 @@ public class DataTeste {
 		d2.ano = 2000;
 		String data2 = d2.formatarData();
 		
+		Data d3 = new Data();
+		String data3 = d3.formatarData();
+		
 		System.out.println("Primeira Data: " + data1);
 		System.out.println("Segunda Data: " + data2);
+		System.out.println("Terceira Data: " + data3);
 	}
 	
 }
