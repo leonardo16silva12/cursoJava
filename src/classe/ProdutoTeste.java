@@ -9,10 +9,7 @@ public class ProdutoTeste {
         String formato = "R$#,##0.00";
         DecimalFormat d = new DecimalFormat(formato);
 		
-		Produto p1 = new Produto();
-		p1.nome = "Notebook";
-		p1.preco = 4000;
-		p1.desconto = 0.20;
+		Produto p1 = new Produto("Notebook", 4000, 0.20);
 		
 		var p2 = new Produto();
 		p2.nome = "Celular";
