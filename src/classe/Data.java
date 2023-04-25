@@ -33,7 +33,9 @@ public class Data {
 	}
 
 	String formatarData() {
-		return String.format("%d/%d/%d", dia, mes, ano);
+		// Váriavel Local (definida dentro do escopo do método, ou seja, se tentar utilizar em outro lugar não vai reconhecer)
+		final String formato = "%d/%d/%d";
+		return String.format(formato, dia, mes, ano);
 	}
 
 }
