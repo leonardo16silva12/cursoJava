@@ -2,20 +2,30 @@ package oo.heranca.desafio;
 
 public class Carro {
 
-	int velocidade;
+	public final int velocidade_maxima;
+	protected int velocidade;
+	protected int delta = 5;
 
-	void acelerar() {
-		velocidade += 5;
+	protected Carro(int velocidadeMaxima) {
+		this.velocidade_maxima = velocidadeMaxima;
 	}
 
-	void frear() {
+	public void acelerar() {
+		if (velocidade + delta > velocidade_maxima) {
+			velocidade = velocidade_maxima;
+		} else {
+			velocidade += delta;
+		}
+	}
+
+	public void frear() {
 		if (velocidade >= 5) {
 			velocidade -= 5;
 		} else {
 			velocidade = 0;
 		}
 	}
-	
+
 	public String toString() {
 		return "Velocidade atual é " + velocidade + "Km/h.";
 	}

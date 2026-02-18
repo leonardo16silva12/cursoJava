@@ -1,11 +1,14 @@
-package oo.heranca.desafio;
+package oo.heranca.teste;
+
+import oo.heranca.desafio.Civic;
+import oo.heranca.desafio.Ferrari;
 
 public class TestDrive {
 
 	public static void main(String[] args) {
 
 		Civic civic = new Civic();
-		Ferrari ferrari = new Ferrari();
+		Ferrari ferrari = new Ferrari(400);
 
 		System.out.println("Civic e Ferrari vão acelerar 2 vezes...");
 
