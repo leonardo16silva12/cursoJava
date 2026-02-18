@@ -15,6 +15,8 @@ public class TestDrive {
 		civic.acelerar();
 		civic.acelerar();
 
+		ferrari.ligarTurbo();
+		ferrari.ligarAr();
 		ferrari.acelerar();
 		ferrari.acelerar();
 
