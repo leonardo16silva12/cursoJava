@@ -5,16 +5,16 @@ import java.util.Objects;
 public class Usuario {
 
 	String nome;
-	
+
 	Usuario(String nome) {
 		this.nome = nome;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Nome: " + this.nome;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(nome);
@@ -31,7 +31,4 @@ public class Usuario {
 		Usuario other = (Usuario) obj;
 		return Objects.equals(nome, other.nome);
 	}
-
-
-	
 }
